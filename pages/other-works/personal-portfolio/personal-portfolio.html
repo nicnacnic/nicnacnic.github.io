@@ -1,0 +1,75 @@
+<!-- Use this as a template for future shows. -->
+<header>
+    <h1>Personal Portfolio</h1>
+</header>
+
+
+<section class="info-section">
+    <div class="text-section">
+        <!-- An unlimited amount of paragraphs can be added! -->
+        <p>Loving this website? That's great to hear!</p>
+        <p>This portfolio wasn't made using online website builders or offline WYSIWYG tools-I handcoded it with my
+            bare two hands (and a lot of help from StackOverflow!). It's a testament and visual example of my
+            self-taught coding and web design skills in action! I coded it over a slow week during the spring of 2023.
+        </p>
+        <p>
+            My original portfolio was built off Google Sites, while it was a nice tool to use for a simple site, I hit
+            its limitations really quickly. My main gripe was with the visuals, there were lots of small nitpicks on
+            text/image sizing and placement, the lack of a good image/document viewer, and also my website traffic data
+            being scraped by Google. So instead, I decided to put my coding skills to the test and build my own to get
+            around Google Sites' limitations.
+        </p>
+        <p>From initial publication, the website has not changed dramatically. Outside of regular content updates as I work
+            on more shows and projects, I've introduced quality-of-life features to the site over the years, such as the
+            sorting options in the gallery, a better mobile layout, and the ability to click and see pictures in a
+            bigger size.</p>
+        <p>
+            Here are some more technical details for you tech-saavy folks! This site is built entirely using raw HTML,
+            CSS and JavaScript-I did not use any external packages or component libraries. Because I wanted a free
+            hosting solution, I settled with GitHub Pages that allows custom domains in repositories. However-GitHub
+            does have some limitations that I had to work around, most notably the lack of a good page routing system.
+        </p>
+        <p>
+            I had to come up with a hacky solution to get around the lackluster routing system. When you navigate to a
+            page that isn't the home page, you first get directed to a custom 404 page that you can set up with GitHub.
+            In that HTML file, there is a JavaScript function that checks your current URL to a JSON file that has every
+            possible page path. If the URL is valid, it then loads the corresponding HTML, CSS and JS files, and updates
+            the navigation bar to that current page path. You can see the raw code in <a
+                href="https://github.com/nicnacnic/nicnacnic.github.io/blob/main/404.html">404.html</a>
+        </p>
+        <p>
+            Content-wise, the website pages are fully modular, and it's pretty easy to add a page. All I have to do is
+            copy the template page, give it a name, edit the text content, get some images uploaded, edit the config
+            file to add that page to the site, and then push the updates to GitHub. It takes me about 15 minutes per new
+            page I want to add, which is comparable in time to what it would take me on a website builder, the
+            difference with my system being you have to have a base knowledge in HTML/CSS to work it.
+        </p>
+        <p>The source code is free and open-source, and I've recycled it for use on other projects and sites. Feel free
+            to take a peek if you'd like to see more under the hood!</p>
+        <div class="button-container">
+            <!-- Put external paperwork URL next to href -->
+            <a href="https://github.com/nicnacnic/nicnacnic.github.io" target="_blank"
+                class="button button-arrow">Source Code&nbsp&nbsp&nbsp</a>
+        </div>
+    </div>
+    <div class="photo-section">
+        <div class="photo-section-container">
+            <div class="photo-column">
+                <img class="photo" src="/assets/other-works/Personal Portfolio/vs code.png" />
+                <div class="photo-text"><i>A view of the page router source code open in my code editor, with the test
+                        server running in the background.</i>
+                </div>
+                <img class="photo" src="/assets/other-works/Personal Portfolio/original.png" />
+                <div class="photo-text"><i>The original Google Sites version of my portfolio.</i>
+                </div>
+                <img class="photo" src="/assets/other-works/Personal Portfolio/gallery.png" />
+                <div class="photo-text"><i>First version of the gallery, without the sorting feature or subtext in the
+                        tiles.</i>
+                </div>
+                <img class="photo" src="/assets/other-works/Personal Portfolio/github.png" />
+                <div class="photo-text"><i>The source code on GitHub, as of July 2025.</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

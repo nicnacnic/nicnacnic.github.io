@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nicolas Baror Portfolio</title>
+  <!-- <link rel="icon" type="image/png" href="favicon.ico" /> -->
+  <script src="/index.js"></script>
+  <link rel="stylesheet" href="/normalize.css" />
+  <link rel="stylesheet" href="/stylesheet.css" />
+  <meta charset="UTF-8">
+  <meta name="title" content="Nicolas Baror Portfolio" />
+  <meta name="description"
+    content="Nicolas Baror is a professional theatrical lighting designer and technical director. Come take a look and see what Nicolas can do for your upcoming project!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Gallery",
+        "item": "https://nicolasbaror.com/gallery"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calendar",
+        "item": "https://nicolasbaror.com/calendar"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Resume",
+        "item": "https://nicolasbaror.com/resume"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Contact",
+        "item": "https://nicolasbaror.com/contact"
+      }]
+    }
+    </script>
+</head>
+
+<body>
+  <div class="fader visible">
+    <div class="spinnerDiv">
+      <svg class="circular">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10" />
+      </svg>
+    </div>
+  </div>
+  <div class="image-expand-container">
+    <div class="image-expand-background"></div>
+    <div class="image-expand-back-arrow" onClick="lastImage(this)">&lt;</div>
+    <div class="image-expand-image-container"  onClick="document.querySelector('.image-expand-container').classList.remove('visible')">
+      <img class="image-expand-image">
+    </div>
+    <div class="image-expand-next-arrow" onClick="nextImage(this)">&gt;</div>
+    <div class="image-expand-close" onClick="document.querySelector('.image-expand-container').classList.remove('visible')">X</div>
+  </div>
+  <header>
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        Nicolas Baror Portfolio
+      </div>
+      <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+      <label for="navbar-toggle" class="navbar-toggle-label">
+        <span class="navbar-toggle-icon"></span>
+      </label>
+      <div class="navbar-page-shadow" onClick="document.querySelector('#navbar-toggle').checked = false"></div>
+      <nav class="navbar">
+        <ul class="navbar-menu">
+          <li><a href="/" data-link>Home</a></li>
+          <li><a href="/gallery" data-link>Gallery</a></li>
+          <li class="navbar-dropdown">
+            <a>Other Works <span class="navbar-caret"></span></a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/other-works/indiethon" data-link>Indiethon</a></li>
+              <li><a href="/other-works/cad-drafting" data-link>CAD Drafting</a></li>
+              <li><a href="/other-works/personal-portfolio" data-link>Personal Portfolio</a></li>
+              <li><a href="https://github.com/nicnacnic" target="_blank">GitHub Profile</a></li>
+            </ul>
+          </li>
+          <li><a href="/calendar" data-link>Calendar</a></li>
+          <li><a href="/resume" data-link>Resume</a></li>
+          <li><a href="/contact" data-link>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="page-container">
+    <main>
+
+    </main>
+    <footer>
+      <div class="footer-made-text">
+        This website is custom built with HTML/CSS/JS. Found an issue? Open it on <a target="_blank"
+          href="https://github.com/nicnacnic/nicnacnic.github.io">GitHub!</a>
+      </div>
+      <div class="footer-container">
+        <div class="links">
+          <a href="/" data-link>Home</a>
+          <a href="/gallery" data-link>Gallery</a>
+          <a href="/calendar" data-link>Calendar</a>
+          <a href="/resume" data-link>Resume</a>
+          <a href="/contact" data-link>Contact</a>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Nicolas Baror. All rights reserved.
+      </div>
+    </footer>
+  </div>
+</body>
+<style>
+
+</style>
+
+</html>
