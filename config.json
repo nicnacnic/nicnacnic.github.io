@@ -179,8 +179,8 @@
             "name": "CAD Drafting",
             "path": "/other-works/cad-drafting",
             "html": "other-works/cad-drafting/cad-drafting.html",
-            "stylesheet": "other-works/cad-Drafting/stylesheet.css",
-            "javascript": "other-works/cad-Drafting/index.js"
+            "stylesheet": "other-works/cad-drafting/stylesheet.css",
+            "javascript": "other-works/cad-drafting/index.js"
         },
         {
             "name": "Personal Portfolio",
